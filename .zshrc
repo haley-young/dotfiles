@@ -14,6 +14,8 @@ export PROMPT='${COLOR_DIR}%d ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF}${NEWLI
 
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
+zle_highlight=('paste:none')
+
 export PATH=$PATH:$HOME/bin
 alias core="cd ~/src/github.com/Shopify/shopify"
 alias spt="cd ~/src/github.com/Shopify/shopify-payments-tools"
